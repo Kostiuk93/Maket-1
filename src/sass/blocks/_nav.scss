@@ -1,0 +1,27 @@
+.nav {
+    display: grid;
+    grid-template-columns: repeat(5, 228px);
+    grid-template-rows: 47px;
+    padding: 19px 0;
+    &-item{
+        position: relative;
+        display: grid;
+        grid-template-columns: 28px 189px;
+        column-gap: 11px;
+        img {
+            margin-top: 4px;
+        }
+    }
+    &__land {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        color: #242424;
+    }
+    &__descr {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #242424;
+    }
+}

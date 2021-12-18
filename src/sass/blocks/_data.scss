@@ -1,0 +1,66 @@
+.data {
+    position: relative;
+    margin-top: 80px;
+    height: 580px;
+    background: url(../img/bg_your_data.jpg) center center/cover no-repeat;
+    z-index: -2;
+    &__header {
+        display: flex;
+        justify-content: center;
+        padding-top: 79px;
+    }
+
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 570px 570px;
+        column-gap: 165px;
+    }
+    &__storage {
+        position: relative;
+        text-align: right;
+        &-header {
+            margin-top: 128px;
+            z-index: 10;
+        }
+        &-text {
+            margin-top: 20px;
+            z-index: 10;
+        }
+        &-box {
+            position: absolute;
+            width: 167px;
+            height: 167px;
+            opacity: 0.3;
+            background-color: #00c2f0;
+            top: 100px;
+            right: -43px;
+            z-index: -1;
+        }
+    }
+
+    &__server {
+        position: relative;
+        &-header {
+            margin-top: 128px;
+            text-align: left;
+
+        }
+        &-text {
+            margin-top: 20px;
+            text-align: left;
+
+        }
+        &-box {
+            position: absolute;
+            width: 167px;
+            height: 167px;
+            opacity: 0.3;
+            background-color: #00c2f0;
+            top: 100px;
+            left: -43px;
+            z-index: -1;
+        }
+    }
+    
+}

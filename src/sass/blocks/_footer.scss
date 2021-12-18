@@ -1,0 +1,78 @@
+footer {
+    background-color: #00c2f0;
+    z-index: -1;
+    padding: 50px 0 40px 0;
+}
+
+.footer {
+    padding: 0 15px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 377px 263px 117px 114px;
+    grid-auto-columns: auto;
+    &__company {
+        width: 377px;
+        margin-right: 114px;
+    }
+    &__module {
+        width: 263px;
+        margin-right: 73px;
+    }
+    &__industries {
+        width: 117px;
+        margin-right: 86px;
+    }
+    &__info {
+        width: 114px;
+    }
+    &__header {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.8;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+    }
+    &__img {
+        padding: 6px 0;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+    }
+    &__links {
+        font-size: 14px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.36;
+        letter-spacing: normal;
+        text-align: left;
+        color: #fff;
+        text-decoration: none;
+        a {
+            color: #fff;
+        }
+    }
+}
+.line {
+    margin: 44px 0 36px 0;
+    display: flex;
+    justify-content: center;
+    height: 1px;
+    width: 100%;
+    background-color: #4da8bd;
+    opacity: 0.3;
+}
+.adr {
+    display: flex;
+    justify-content: center;
+}

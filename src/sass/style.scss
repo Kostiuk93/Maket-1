@@ -1,0 +1,28 @@
+@import "libs/fonts";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+:root {
+    --main-color: #00c2f0;
+}
+@import "blocks/fonts";
+@import "blocks/nav.scss";
+@import "blocks/promo";
+@import "blocks/info";
+@import "blocks/product";
+@import "blocks/advantage";
+@import "blocks/data";
+@import "blocks/contact";
+@import "blocks/footer";

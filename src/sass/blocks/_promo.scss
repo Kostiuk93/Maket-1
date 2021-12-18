@@ -1,0 +1,130 @@
+.promo {
+    position: relative;
+    height: 700px;
+    background: url(../img/bg_promo.jpg) center center/cover no-repeat;
+    &__logo {
+        position: absolute;
+        top: 39px;
+    }
+    &__menu {
+        position: absolute;
+        top: 64px;
+        right: 0;
+        width: 540px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: 11px;
+        &-item{
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: normal;
+            text-align: right;
+            text-transform: uppercase;
+            color: #fff;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    &__subtitle {
+        padding-top: 237px;
+        width: 530px;
+        font-size: 42px;
+        line-height: 1.14;
+        color: #fff;
+    }
+    &__title {
+        margin-top: 27px;
+        width: 427px;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.25;
+        color: #fff;
+        span {
+            font-weight: 400;
+        }
+    }
+    &__btn {
+        margin-top: 39px;
+        width: 241px;
+        height: 60px;
+        box-shadow: 0 0 7 0 rgba(0, 0, 0, 0.07);
+        background-color: #00c2f0;
+        border-radius: 6px;
+        border: solid #00c2f0;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    &__carousel {
+        position: absolute;
+        top: 131px;
+        left: 400px;
+        &-btn {
+            position: absolute;
+            top: 489px;
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+        &-inner {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 320px;
+            grid-template-rows: 569px;
+            left: 400px;
+            &-slide1 {
+                padding-top: 64px;
+            }
+            &-slide2 {
+                width: 99%;
+                padding-top: 6px;
+                }
+            }
+        }
+    .next, .prev {
+        cursor: pointer;
+        img {
+        }
+    }
+    .next {
+    }
+    .tns-outer {
+        
+    }
+    .tns-item {
+        img {
+            display: flex;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        position: absolute;
+        left: 47%;
+        button {
+            width: 11px;
+            height: 11px;
+            margin: 116px 3px 68px 13px;
+            top: 250px;
+            border: solid 1px #fff;
+            border-radius: 100%;
+            cursor: pointer;
+
+        }
+        .tns-nav-active {
+            background-color: #fff;
+        }
+    }
+    .tns-liveregion, .tns-visually-hidden {
+        display: none;
+    }
+}

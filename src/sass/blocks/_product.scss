@@ -1,0 +1,102 @@
+.product {
+    z-index: 1;
+    padding-top: 80px;
+    height: 890px;
+    background: url(../img/bg_slidejpg.jpg) center center/cover no-repeat;
+    &__header {
+        display: flex;
+        justify-content: center;
+    }
+    &__menu {
+        margin: 25px 165px 0 165px;
+        text-align: center;
+        display: flex;
+        justify-content:space-evenly;
+        border: #ffffff 1px solid;
+        border-radius: 4px;
+        list-style-type: none;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 19px 20px 18px 0;
+        margin: 6px 0 7px 0;
+        border-right: 2px solid #999999;
+        &:hover {
+            color: #00c2f0;
+            cursor: pointer;
+        }
+        &:last-child {
+            border-right: none;
+        }
+    }
+    
+    &__slider {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        &_wrapper {
+            position: absolute; 
+            display: flex;
+            justify-content: center;
+        }
+        &_inner {
+            
+        }
+        &_slide {
+        }
+       
+    }
+    .tns-inner {
+        position: relative;
+        top: 38px;
+        width: 700px;
+        height: 500px;
+    }
+    .prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -184px;
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        cursor: pointer;
+    }
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -184px;
+        border: none;
+        background-color: rgba($color: #000000, $alpha: 0.0);
+        cursor: pointer;
+    }   
+    .next {
+        right: -184px;
+        left: auto;
+    }
+    .tns-slide-active {
+        display: block;
+        z-index: 10;
+        scale: 2;
+    }
+   
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tns-nav {
+        button {
+            width: 15px;
+            height: 15px;
+            background-color: red;
+            border-radius: 100%;
+        }
+        .tns-nav-active {
+            background-color: black;
+        }
+    }
+}
