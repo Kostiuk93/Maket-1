@@ -65,8 +65,13 @@
         cursor: pointer;
     }
 
-    &__carousel {
+    &__wrapper {
         position: absolute;
+        top: -21px;
+    }
+
+    &__carousel {
+        position: relative;
         top: 131px;
         left: 400px;
         &-btn {
@@ -78,19 +83,18 @@
         }
         &-inner {
             position: absolute;
-            display: grid;
+            top: 1px;
+            width: 700px;
+          /*   display: grid;
             grid-template-columns: 320px;
-            grid-template-rows: 569px;
-            left: 400px;
+            grid-template-rows: 569px; */
             &-slide1 {
-                padding-top: 64px;
             }
             &-slide2 {
-                width: 99%;
-                padding-top: 6px;
                 }
             }
         }
+
     .next, .prev {
         cursor: pointer;
         img {
@@ -98,13 +102,32 @@
     }
     .next {
     }
+    .tns {
+        &-slide {
+            &-active {
+                &:first-child {
+                    position: absolute;
+                    top: 200px;
+                }
+               &:nth-last-child(1) {
+                   position: absolute;
+                   top: 200px;
+               }
+               &:nth-last-child(2) {
+                position: absolute;
+                top: 200px;
+            }
+            }
+        }
+    }
     .tns-outer {
+        
+    }
+    #tns1 > .tns-item {
         
     }
     .tns-item {
         img {
-            display: flex;
-            margin: 0 auto;
         }
     }
     .tns-nav {
@@ -125,6 +148,6 @@
         }
     }
     .tns-liveregion, .tns-visually-hidden {
-        display: none;
+
     }
 }
