@@ -7,13 +7,17 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 570px 570px;
-        grid-template-rows: 355px;
+        grid-auto-rows: 355px;
         margin-top: 44px;
+        column-gap: 0;
     }
     &__block {
         position: relative;
         display: flex;
         justify-content: center;
+        &:nth-child(1) {
+            grid-column: 1 / 2;
+        }
     }
     &__bgtext {
         position: absolute;
